@@ -1,4 +1,3 @@
-$prodYaml = @"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,6 +18,3 @@ spec:
           image: nginx:1.21
           ports:
             - containerPort: 80
-"@
-
-Set-Content -Path .\nginx-prod.yaml -Value $prodYaml -Encoding utf8
